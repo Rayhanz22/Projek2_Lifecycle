@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HasilKuis">
+
+    <TextView
+        android:id="@+id/tvDetailJawaban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:gravity="start"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Nilai "
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tvNilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:layout_below="@+id/tv1"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    
+    <TextView
+        android:id="@+id/tvMassage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="benar?, salah?"
+        android:layout_below="@+id/tvNilai"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvhasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilaimu adalah A, Selamat Kamu Lulus!!"
+        android:layout_below="@+id/tvMassage"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnUlangi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ulangi Kuis"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvhasil"
+        style="@style/Buttonku"/>
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BAGIKAN TEMANMU!"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnUlangi"
+        style="@style/Buttonku"/>
+
+</RelativeLayout>
